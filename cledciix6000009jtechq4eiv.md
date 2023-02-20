@@ -1,4 +1,4 @@
-# Ranges
+# Range in Go
 
 The range keyword is used to iterate over various data types. It is used for loops and its return values are dependent on the data types over which we're using the range keyword.
 
