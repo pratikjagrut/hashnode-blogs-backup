@@ -1,4 +1,4 @@
-# Functions
+# Functions in Go
 
 A function is a block of statements which performs a specific task. A function is a well-organized and reusable code. It improves the code readability, maintainability and testability. The general function is:
 
