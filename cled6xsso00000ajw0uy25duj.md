@@ -1,4 +1,4 @@
-# Looping Construct
+# Looping Construct in Go
 
 Go has only one looping construct, the `for` loop.
 
