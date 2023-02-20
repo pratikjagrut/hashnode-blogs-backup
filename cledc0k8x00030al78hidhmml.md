@@ -1,4 +1,4 @@
-# Arrays And Slices
+# Arrays And Slices in Go
 
 ## Array
 
