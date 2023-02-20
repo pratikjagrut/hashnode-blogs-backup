@@ -1,4 +1,4 @@
-# Conditional Statements
+# Conditional Statements in Go
 
 Conditional Statements are part of every programming language. They help us to decide which instruction is supposed to run when a certain condition is met. *e.g. If I’m hungry then I’ll eat else I’ll wait.* *e.g. If the score is greater than 35%, you passed, else you failed.*
 
