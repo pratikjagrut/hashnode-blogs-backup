@@ -1,4 +1,4 @@
-# Variables, Data Types And Constants
+# Variables, Data Types And Constants in Go
 
 ## Variable
 
