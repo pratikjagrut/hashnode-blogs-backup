@@ -1,4 +1,4 @@
-# Anonymous Functions
+# Anonymous Functions in Go
 
 The anonymous function is a feature in Golang which let us define a function without a name. This feature is also called a function literal. This is useful when you want an inline function or to form a closure.
 
