@@ -1,4 +1,4 @@
-# Error Handling (Part-1)
+# Error Handling in Go (Part-1)
 
 `Error` is a result of unexpected circumstances or abnormal behaviour of the program. For example, a network connection error, a user entering incorrect data, a function invoked with inaccurate values or a file not found, and many other scenarios could cause an error. `Error Handling` is a process of knowing where an error could befall, and having a mechanism to handle it.
 
