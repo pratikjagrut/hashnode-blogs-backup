@@ -1,4 +1,4 @@
-# Switch Statement
+# Switch Statement in Go
 
 A switch statement is another way to write a sequence of if-else statements.
 
