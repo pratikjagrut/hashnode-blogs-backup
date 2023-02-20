@@ -1,4 +1,4 @@
-# Interfaces (Part-1)
+# Interfaces in Go (Part-1)
 
 In Golang, an interface is a set of method signatures. When any type defines all the methods from an interface then that type implements the interface. So we can state that interface defines the behaviour of the object/type.
 
