@@ -1,4 +1,4 @@
-# Error Handling (Part-2)
+# Error Handling in Go (Part-2)
 
 ## Creating errors with errors.New() function
 
