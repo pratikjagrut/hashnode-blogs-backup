@@ -1,4 +1,4 @@
-# Go Maps
+# Map in Go
 
 The map is a collection of key-value pairs. It is an implementation of a Hash Table, which provides Create/Add, Read, Update and Delete operations over the data. The collection of key-value pairs is unordered and each key is unique.
 
