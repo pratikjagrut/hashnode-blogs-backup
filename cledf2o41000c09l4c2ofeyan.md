@@ -1,6 +1,6 @@
 # Git Aliases
 
-\`Git is the most widely used `Version Control System (VCS)` or `Source Code Management(SCM)` software. It is a day-to-day go-to tool for many developers. Many developers use a terminal/command line to operate it.
+`Git` is the most widely used `Version Control System (VCS)` or `Source Code Management(SCM)` software. It is a day-to-day go-to tool for many developers. Many developers use a terminal/command line to operate it.
 
 In the terminal, we type git commands `git <sub-command> <flag>` it runs if it succeeds we're happy. On a day-to-day basis, we mostly use repetitive commands like `git pull <remote> <branch>`, `git push <remote> <branch>`, `git commit` and many others and sometimes we use prolonged commands like this one `git log --graph --pretty=format:'%Cred%h%Creset %Cgreen%cr%Creset -%C(yellow)%d%Creset %s %C(bold blue)[%cn]%Creset' --abbrev-commit --date=relative` which prints commit history in a custom fashion.
 
