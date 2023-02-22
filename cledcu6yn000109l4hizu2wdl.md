@@ -32,7 +32,7 @@ func main() {
 
 ### Assigning an anonymous function to a variable
 
-In Go, you can assign an anonymous function to a variable. The assigned variable will be the type of function type and it can be called as a regular function.
+In Go, you can assign an anonymous function to a variable. The assigned variable will be of function type and it can be called as a regular function.
 
 ```go
 package main
@@ -93,7 +93,7 @@ func main() {
 
 You can pass an anonymous function as an argument to a regular function or an anonymous function.
 
-* *Anonymous function as an argument to a regular function*
+* *Anonymous functions as an argument to a regular function*
     
 
 ```go
