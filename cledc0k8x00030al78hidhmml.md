@@ -37,21 +37,23 @@ In both cases, the type of `j` is `[3]string`.
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-var i [3]int
-fmt.Println("Values of array, i: ", i)
-fmt.Println("Length of array, i: ", len(i))
-i[0] = 1
-i[1] = 10
-i[2] = 100
-fmt.Println("Updated values of array, i: ", i)
-j := [3]string{"Go", "is", "fun"}
-fmt.Println("Values of array, j: ", j)
-fmt.Println("Length of array, j: ", len(j))
-k := [...]string{"Go", "is", "fun"}
-fmt.Println("Values of array, k: ", k)
-fmt.Println("Length of array, k: ", len(k))
+	var i [3]int
+	fmt.Println("Values of array, i: ", i)
+	fmt.Println("Length of array, i: ", len(i))
+	i[0] = 1
+	i[1] = 10
+	i[2] = 100
+	fmt.Println("Updated values of array, i: ", i)
+	j := [3]string{"Go", "is", "fun"}
+	fmt.Println("Values of array, j: ", j)
+	fmt.Println("Length of array, j: ", len(j))
+	k := [...]string{"Go", "is", "fun"}
+	fmt.Println("Values of array, k: ", k)
+	fmt.Println("Length of array, k: ", len(k))
 }
 ```
 
@@ -69,11 +71,13 @@ A slice literal is like an array literal without the length.
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-i := []int{1, 2, 3, 4, 5}
-fmt.Println(i)
-fmt.Println(len(i))
+	i := []int{1, 2, 3, 4, 5}
+	fmt.Println(i)
+	fmt.Println(len(i))
 }
 ```
 
@@ -98,12 +102,14 @@ Where,
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-b := make([]int, 3, 5)
-fmt.Println("Length: ", len(b))
-fmt.Println("Capacity: ", cap(b))
-fmt.Println("Values: ", b)
+	b := make([]int, 3, 5)
+	fmt.Println("Length: ", len(b))
+	fmt.Println("Capacity: ", cap(b))
+	fmt.Println("Values: ", b)
 }
 ```
 
@@ -113,12 +119,14 @@ If the capacity argument is omitted then capacity defaults to length.
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-b := make([]int, 3)
-fmt.Println("Length: ", len(b))
-fmt.Println("Capacity: ", cap(b))
-fmt.Println("Values: ", b)
+	b := make([]int, 3)
+	fmt.Println("Length: ", len(b))
+	fmt.Println("Capacity: ", cap(b))
+	fmt.Println("Values: ", b)
 }
 ```
 
@@ -140,22 +148,24 @@ A slice can be formed by specifying 2 indices, high bound and low bound separate
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-odds := [5]int{1, 3, 5, 7, 9}
-fmt.Println("Length of odds array: ", len(odds))
-fmt.Println("Capacity of odds array: ", cap(odds))
-fmt.Println("Values of odds array: ", odds)
-fmt.Println()
-var o []int = odds[1:4]
-fmt.Println("Length of o slice: ", len(o))
-fmt.Println("Capacity of o slice: ", cap(o))
-fmt.Println("Values of o slice: ", o)
-fmt.Println()
-m := odds[1:4]
-fmt.Println("Length of m slice: ", len(m))
-fmt.Println("Capacity of m slice: ", cap(m))
-fmt.Println("Values of m slice: ", m)
+	odds := [5]int{1, 3, 5, 7, 9}
+	fmt.Println("Length of odds array: ", len(odds))
+	fmt.Println("Capacity of odds array: ", cap(odds))
+	fmt.Println("Values of odds array: ", odds)
+	fmt.Println()
+	var o []int = odds[1:4]
+	fmt.Println("Length of o slice: ", len(o))
+	fmt.Println("Capacity of o slice: ", cap(o))
+	fmt.Println("Values of o slice: ", o)
+	fmt.Println()
+	m := odds[1:4]
+	fmt.Println("Length of m slice: ", len(m))
+	fmt.Println("Capacity of m slice: ", cap(m))
+	fmt.Println("Values of m slice: ", m)
 }
 ```
 
@@ -190,19 +200,21 @@ When we create a slice we create a slice variable which stores the pointer, leng
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-alphabet := [5]string{"A", "B", "C", "D"}
-fmt.Println("Initial values of alphabet: ", alphabet)
-i := alphabet[0:3]
-fmt.Println("Initial values of i: ", i)
-j := alphabet[1:4]
-fmt.Println("Initial values of j: ", j)
-i[2] = "P" // This changes will affect alphabet, i ,j slices
-fmt.Println()
-fmt.Println("Updated values of alphabet: ", alphabet)
-fmt.Println("Updated values of i: ", i)
-fmt.Println("Updated values of j: ", j)
+	alphabet := [5]string{"A", "B", "C", "D"}
+	fmt.Println("Initial values of alphabet: ", alphabet)
+	i := alphabet[0:3]
+	fmt.Println("Initial values of i: ", i)
+	j := alphabet[1:4]
+	fmt.Println("Initial values of j: ", j)
+	i[2] = "P" // This changes will affect alphabet, i ,j slices
+	fmt.Println()
+	fmt.Println("Updated values of alphabet: ", alphabet)
+	fmt.Println("Updated values of i: ", i)
+	fmt.Println("Updated values of j: ", j)
 }
 ```
 
@@ -229,17 +241,19 @@ The append function appends the data at the end of the slice. If the destination
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-a := make([]int, 1)
-fmt.Println("Length: ", len(a))
-fmt.Println("Capacity: ", cap(a))
-fmt.Println("Values: ", a)
-fmt.Println()
-a = append(a, 1, 2, 3)
-fmt.Println("Length: ", len(a))
-fmt.Println("Capacity: ", cap(a))
-fmt.Println("Values: ", a)
+	a := make([]int, 1)
+	fmt.Println("Length: ", len(a))
+	fmt.Println("Capacity: ", cap(a))
+	fmt.Println("Values: ", a)
+	fmt.Println()
+	a = append(a, 1, 2, 3)
+	fmt.Println("Length: ", len(a))
+	fmt.Println("Capacity: ", cap(a))
+	fmt.Println("Values: ", a)
 }
 ```
 
@@ -249,14 +263,16 @@ fmt.Println("Values: ", a)
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-a := []string{"a", "b", "c"}
-b := []string{"d", "e"}
-a = append(a, b...)
-fmt.Println("Length: ", len(a))
-fmt.Println("Capacity: ", cap(a))
-fmt.Println("Values: ", a)
+	a := []string{"a", "b", "c"}
+	b := []string{"d", "e"}
+	a = append(a, b...)
+	fmt.Println("Length: ", len(a))
+	fmt.Println("Capacity: ", cap(a))
+	fmt.Println("Values: ", a)
 }
 ```
 
@@ -334,21 +350,23 @@ In this example, the slice s has a capacity of 5 elements so the only string Hel
 
 ```go
 package main
+
 import "fmt"
+
 func main() {
-// Copy from one slice to another slice
-var odds = make([]int, 3)
-copy(odds, []int{1, 3, 5})
-fmt.Println(odds)
-// Copy between same slice
-nums := []int{1, 2, 3, 4}
-copy(nums, nums[1:])
-fmt.Println(nums)
-// Copy from a string to a byte slice
-var s = make([]byte, 5)
-copy(s, "Hello, world!")
-fmt.Println(s)
-fmt.Println(string(s))
+	// Copy from one slice to another slice
+	var odds = make([]int, 3)
+	copy(odds, []int{1, 3, 5})
+	fmt.Println(odds)
+	// Copy between same slice
+	nums := []int{1, 2, 3, 4}
+	copy(nums, nums[1:])
+	fmt.Println(nums)
+	// Copy from a string to a byte slice
+	var s = make([]byte, 5)
+	copy(s, "Hello, world!")
+	fmt.Println(s)
+	fmt.Println(string(s))
 }
 ```
 
