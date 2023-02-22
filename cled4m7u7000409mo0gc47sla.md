@@ -2,7 +2,7 @@
 
 ## Source code organization
 
-Since GO1.11 we've had two ways of organizing go code: one is, using `GOPATH` and the second one is using `go mod`. `GOPATH` structure was widely in use and kind of only way to structure your go code before GO1.11. In this blog, we'll use `go mod` since it provides more features and flexibility over GOPATH.
+Since GO1.11 we've had two ways of organizing go code: one is, using `GOPATH` and the second one is using `go mod`. `GOPATH` the structure was widely in use and kind of only way to structure your go code before GO1.11. In this blog, we'll use `go mod` since it provides more features and flexibility over GOPATH.
 
 [***To know more about writing code with GOPATH read this blog.***](https://golang.org/doc/gopath_code)
 
@@ -16,9 +16,9 @@ It is recommended to use a remote repository path to organize Go code even thoug
 
 To start a new project, we'll first choose the module's pathname and then initialize it using `go mod init`. I'm choosing `github.com/pratikjagrut/helloworld` path, but you can choose a different one.
 
-Create project/module directory.
+Create a project/module directory.
 
-```plaintext
+```bash
 mkdir helloworld 
 cd helloworld
 go mod init github.com/pratikjagrut/helloworld
@@ -34,7 +34,7 @@ go 1.16
 
 Now let's create a file `main.go` (any name will work followed by extension .go).
 
-```plaintext
+```go
 package main
 
 import "fmt"
@@ -57,7 +57,7 @@ While developing the executable command, we use the `main` package. The main pac
 
 Run the code.
 
-```plaintext
+```bash
 go run .
 
 Hello, world!
@@ -67,9 +67,9 @@ Hello, world!
 
 As this is the main package, we can install the code as a command using `go install`.
 
-`go install` is controlled by `GOPATH` and `GOBIN` environment variables. If the GOBIN environment variable is set, then binary will install at the GOBIN location, else it will install at the `$GOPATH/bin` location. The default GOPATH ($HOME/go or %USERPROFILE%\\go). To use the installed binary as a command, make sure the binary installation path is added to the $PATH variable.
+`go install` is controlled by `GOPATH` and `GOBIN` environment variables. If the GOBIN environment variable is set, then the binary will install at the GOBIN location, else it will install at the `$GOPATH/bin` location. The default GOPATH ($HOME/go or %USERPROFILE%\\go). To use the installed binary as a command, make sure the binary installation path is added to the $PATH variable.
 
-```plaintext
+```bash
 go install .
 helloworld
 
@@ -78,23 +78,23 @@ Hello, world!
 
 We can make use of any command to install the bin.
 
-```plaintext
+```bash
 go install
 go install .
 go install github.com/pratikjagrut/helloworld
 ```
 
-## Create and import package from the same module
+## Create and import packages from the same module
 
-Here we'll create a `utils` package that will have only one function `SwapStrings`. `SwapStrings` starts with capital because we need to [***export***](https://golang.org/ref/spec#Exported_identifiers) it, so that it could be used outside of the package utils.
+Here we'll create a `utils` package that will have only one function `SwapStrings`. `SwapStrings` starts with capital because we need to [***export***](https://golang.org/ref/spec#Exported_identifiers) it so that it could be used outside of the package utils.
 
-```plaintext
+```bash
 mkdir utils # inside helloworld dir
 ```
 
-Create a file `utils.go` in utils dir with the following code.
+Create a file `utils.go` in the utils dir with the following code.
 
-```plaintext
+```go
 package utils
 
 func SwapStrings(a, b string) (string, string) {
@@ -104,15 +104,15 @@ func SwapStrings(a, b string) (string, string) {
 
 We can build it to check if it compiles successfully.
 
-```plaintext
+```bash
 go build
 ```
 
-If it outputs nothing, then it means compilation successful. `go build` will also add this package to the local cache.
+If it outputs nothing, then it means the compilation is successful. `go build` will also add this package to the local cache.
 
 Now let's use this package in our executable program.
 
-```plaintext
+```go
 package main
 
 import (
@@ -126,7 +126,7 @@ func main() {
 }
 ```
 
-```plaintext
+```bash
 go run .
 
 Hello, world!
