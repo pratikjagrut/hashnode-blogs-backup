@@ -23,20 +23,22 @@ In the below example, it checks `case "Linux":` if os matches `Linux` then stops
 
 ```go
 package main
+
 import (
-"fmt"
-"runtime"
+    "fmt"
+    "runtime"
 )
+
 func main() {
 //Prints which OS you're using
-switch os := runtime.GOOS; os {
-case "linux":
-fmt.Println("Linux.")
-case "darwin":
-fmt.Println("OS X.")
-default:
-fmt.Printf("%s.\n", os)
-}
+    switch os := runtime.GOOS; os {
+        case "linux":
+            fmt.Println("Linux.")
+        case "darwin":
+            fmt.Println("OS X.")
+        default:
+            fmt.Printf("%s.\n", os)
+    }
 }
 ```
 
@@ -48,20 +50,22 @@ Switch with no condition is like `switch true`. It is useful for writing a long 
 
 ```go
 package main
+
 import (
-"fmt"
-"time"
+    "fmt"
+    "time"
 )
+
 func main() {
-t := time.Now()
-switch {
-case t.Hour() < 12:
-fmt.Println("Good morning!")
-case t.Hour() < 17:
-fmt.Println("Good afternoon.")
-default:
-fmt.Println("Good evening.")
-}
+    t := time.Now()
+    switch {
+        case t.Hour() < 12:
+            fmt.Println("Good morning!")
+        case t.Hour() < 17:
+            fmt.Println("Good afternoon.")
+        default:
+            fmt.Println("Good evening.")
+    }
 }
 ```
 
