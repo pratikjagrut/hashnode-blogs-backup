@@ -1,6 +1,6 @@
 # Map in Go
 
-The map is a collection of key-value pairs. It is an implementation of a Hash Table, which provides Create/Add, Read, Update and Delete operations over the data. The collection of key-value pairs is unordered and each key is unique.
+The map is a collection of key-value pairs. It is an implementation of a Hash Table, which provides `Create/Add, Read, Update and Delete` operations over the data. The collection of key-value pairs is unordered and each key is unique.
 
 ## Declaration and initialization
 
@@ -33,7 +33,7 @@ func main() {
 }
 ```
 
-```go
+```bash
 map[int]string
 map[]
 panic: assignment to entry in nil map
@@ -45,7 +45,7 @@ main.main()
 
 [***Run this code in Go Playground***](https://play.golang.org/p/V_CiNrkv9gN)
 
-So to get an initialized and ready-to-use map uses the `make` function.
+So to get an initialized and ready-to-use map we use the `make` function.
 
 ```go
 package main
@@ -61,7 +61,7 @@ func main() {
 }
 ```
 
-```go
+```bash
 map[int]string
 map[]
 map[1:one]
@@ -127,11 +127,11 @@ j := m["two"] // Key not present
 We can check if the key is present in the map with a two-value assignment statement.
 
 ```go
-k, ok := m["three"]
+v, ok := m["three"]
 _, ok := m["three"] // Without retrieving the value.
 ```
 
-If the key is present `ok == true` if the key is not found `ok == false`.
+If the key is present `ok == true` and `v == value` if the key is not found `ok == false` and `v == zero-value` .
 
 **Delete value**
 
