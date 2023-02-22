@@ -51,8 +51,9 @@ for {
 ```go
 package main
 import "fmt"
+
 func main() {
-for i := 0; i < 5; i++ {fmt.Printf("Iteration number: %d\n", i)}
+    for i := 0; i < 5; i++ {fmt.Printf("Iteration number: %d\n", i)}
 }
 ```
 
