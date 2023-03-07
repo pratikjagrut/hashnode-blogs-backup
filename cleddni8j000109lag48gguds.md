@@ -1,4 +1,13 @@
-# Structs in Go (Part-2)
+---
+title: "Structs in Go (Part-2)"
+seoTitle: "Structs in Go"
+datePublished: Fri Sep 23 2022 22:16:11 GMT+0000 (Coordinated Universal Time)
+cuid: cleddni8j000109lag48gguds
+slug: structs-in-go-part-2
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/26MJGnCM0Wc/upload/02071456d6c15892a43837edcde6cdc9.jpeg
+tags: programming-blogs, go, tutorials, programming-languages, struct
+
+---
 
 ## Nested Structs
 
@@ -428,7 +437,7 @@ Name after update:  Jon Snow
 
 ## Empty Struct
 
-In GOlang, we can have an empty struct. A struct without any field is called an empty struct. Below is the signature of an empty struct.
+In Golang, we can have an empty struct. A struct without any field is called an empty struct. Below is the signature of an empty struct.
 
 ```go
 type T struct{}
