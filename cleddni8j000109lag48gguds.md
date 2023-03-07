@@ -497,7 +497,7 @@ Read more about the empty struct and its use cases at [***Dave Cheney's blog.***
 
 ## Array/Slice of structs
 
-The [***Array/Slice***](/blog/golang/series/array_slice) is a collection of the same type of element in a contiguous memory location. We can create an array/slice of structs.
+The ***Array/Slice*** is a collection of the same type of element in a contiguous memory location. We can create an array/slice of structs.
 
 ```go
 package main
