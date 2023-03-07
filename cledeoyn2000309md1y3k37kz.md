@@ -1,4 +1,13 @@
-# Error Handling in Go (Part-2)
+---
+title: "Error Handling in Go (Part-2)"
+seoTitle: "Error Handling in Go"
+datePublished: Sat Nov 19 2022 22:45:18 GMT+0000 (Coordinated Universal Time)
+cuid: cledeoyn2000309md1y3k37kz
+slug: error-handling-in-go-part-2
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/zlhxvIcicwk/upload/ab7e382baa91bd9db561fd6fd2bf7bcc.jpeg
+tags: programming-blogs, go, error-handling, programming-languages, error-handling-in-go
+
+---
 
 ## Creating errors with errors.New() function
 
@@ -102,9 +111,9 @@ Divisor: 0.000000
 
 In the above program, we have replaced errors.New() function with fmt.Errorf(). Now, we can format our error and add new information to it using the Errorf function.
 
-If you look at the implementation of [fmt.Errorf()](https://github.com/golang/go/blob/master/src/fmt/errors.go) is a bit complicated than the errors package due to the string formatting feature but at some level fmt.Errorf() function calls the errors.New() function.
+If you look at the implementation of [fmt.Errorf()](https://github.com/golang/go/blob/master/src/fmt/errors.go) is a bit more complicated than the errors package due to the string formatting feature but at some level fmt.Errorf() function calls the errors.New() function.
 
-***So, the common question is when to use fmt.Errorf() and errors.New()? It depends on the behaviour of the error. If the error needs to have any runtime information, like the address stored in a pointer or the time at which an error occurred, then it is a good idea to use fmt.Errorf function. But on the other side, your error is more of a static behaviour or it is a sentinel error and does not need to have any runtime information, then errors.New() is good enough.***
+***So, the common question is when to use fmt.Errorf() and errors.New()? It depends on the behaviour of the error. If the error needs to have any runtime information, like the address stored in a pointer or the time at which an error occurred, then it is a good idea to use fmt.Errorf() which gives the flexibility to format your error as per your need. On the other side, your error is more of a static behaviour or it is a sentinel error and does not need to have any runtime information, then errors.New() is good enough.***
 
 ## Adding context to the error
 
