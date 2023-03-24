@@ -403,47 +403,6 @@ Timed out.
 
 In addition to using channels, Go also allows for the more traditional approach of writing concurrent programs that utilize memory access synchronization. The `sync` package offers various primitives, including `WaitGroup`, `Mutex`, `RWMutex`, `Cond`, `Once`, and `Pool`.
 
-Here's an example of using WaitGroup to block the main goroutine.
-
-```go
-package main
-
-import (
-	"fmt"
-	"net/http"
-	"sync"
-)
-
-func fetchURL(url string, wg *sync.WaitGroup) {
-	defer wg.Done()
-    resp, err := http.Get(url)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
-	defer resp.Body.Close()
-	fmt.Println("URL hit: ", url)
-}
-
-func main() {
-	var wg sync.WaitGroup
-	urls := []string{
-		"https://www.google.com",
-		"https://www.youtube.com",
-		"https://www.amazon.com",
-		"https://www.linkedin.com",
-	}
-
-	for _, url := range urls {
-		wg.Add(1)
-		go fetchURL(url, &wg)
-	}
-	wg.Wait()
-}
-```
-
-In this case, each time we create a new goroutine, we increase the counter by calling `wg.Add(1)`. Once the goroutine completes, we decrement the counter by calling `wg.Done()`. We use `wg.Wait()` to halt the main goroutine. This function blocks until the counter reaches 0.
-
 `We will explore the sync package in greater detail in a separate blog post.`
 
 ***Thank you for reading this blog, and please give your feedback in the comment section below.***
