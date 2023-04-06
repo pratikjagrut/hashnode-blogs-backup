@@ -342,6 +342,6 @@ The difference is the execution time is quite significant.
 
 It is important to use RWMutex judiciously because it may not be appropriate for all types of shared resources. For example, if the shared resource is small and is accessed frequently, the overhead of acquiring and releasing locks may outweigh the benefits of using RWMutex. In such cases, other synchronization mechanisms like atomic operations or channels may be more appropriate.
 
-*In the next blog, we'll look into cond, once and pool primitives provided by the sync package.*
+*In the next blog, we'll look into* ***cond, once and pool*** *primitives provided by the sync package.*
 
 ***Thank you for reading this blog, and please give your feedback in the comment section below.***
