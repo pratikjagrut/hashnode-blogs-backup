@@ -1,8 +1,8 @@
 ---
-title: "Concurrency in Go (Part-2)"
+title: "Concurrency in Go (Part-2): sync package primitives"
 datePublished: Thu Apr 06 2023 12:20:45 GMT+0000 (Coordinated Universal Time)
 cuid: clg536oop000109jk9zsy87io
-slug: concurrency-in-go-part-2
+slug: concurrency-in-go-part-2-sync-package-primitives
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/G2lgiBBzeEM/upload/0f1a0ee43752f4e38452b54d3124dc2e.jpeg
 tags: programming-blogs, go, concurrency, goroutines, concurrency-in-go
 
