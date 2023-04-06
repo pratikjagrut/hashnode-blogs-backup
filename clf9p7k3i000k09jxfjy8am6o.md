@@ -1,8 +1,8 @@
 ---
-title: "Concurrency in Go (Part-1)"
+title: "Concurrency in Go (Part-1): Goroutines, Channels and Select"
 datePublished: Wed Mar 15 2023 13:08:39 GMT+0000 (Coordinated Universal Time)
 cuid: clf9p7k3i000k09jxfjy8am6o
-slug: concurrency-in-go-part-1
+slug: concurrency-in-go-part-1-goroutines-channels-and-select
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/o0HrQE7bNHM/upload/e2f0abd01045a5e0779996b4ed4c076f.jpeg
 tags: programming-blogs, go, concurrency, goroutines, concurrency-in-go
 
