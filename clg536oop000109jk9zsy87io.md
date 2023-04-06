@@ -129,6 +129,8 @@ Final Count:  985
 Final Count:  979
 ```
 
+[Run this code in Go Playground](https://goplay.tools/snippet/hpMwsnxvcDi)
+
 In Go, channels are the preferred way to share data by communicating, but if you must use the shared memory then we need to make sure that Memory Access is Synchronised.
 
 #### Mutex
@@ -137,7 +139,7 @@ To solve the above issue we use `Mutex`. Mutex stands for mutual exclusion. Mute
 
 In Go, Mutex is implemented as a struct that contains a flag that indicates whether the lock is currently held by a goroutine or not. If the lock is not held, a goroutine can acquire the lock by calling the `Lock()` method on the Mutex. If the lock is already held by another goroutine, the calling goroutine will be blocked until the lock is released.
 
-When a goroutine holds the lock, it has exclusive access to the shared resource and can modify it without any interference from other goroutines. Once the goroutine is done with the shared resource, it can release the lock by calling the `Unlock()` method on the Mutex.
+When a goroutine holds the lock, it has exclusive access to the shared resource and can modify it without any interference from other goroutines. Once the goroutine is done with the shared resource, it can release the lock by calling the `Unlock()` method on Mutex.
 
 ```go
 package main
@@ -174,6 +176,8 @@ Final Count:  1000
 ➜  go run main.go
 Final Count:  1000
 ```
+
+[Run this code in Go Playground](https://goplay.tools/snippet/ECUZm6CC8XC)
 
 In the above example, we're using a mutex, we're locking and unlocking our critical section of code. We apply a lock before the goroutine accesses the count variable. This way only one goroutine can access the count variable and other goroutines will be waiting for the count variable to be unlocked to gain access. This is how mutex synchronises the shared memory access.
 
@@ -240,6 +244,8 @@ Reader acquires lock
 Reader acquires lock
 ```
 
+[Run this code in Go Playground](https://goplay.tools/snippet/nooyW5TDco1)
+
 #### Mutex VS RWMutex which one to use?
 
 In scenarios where more read operations need to be performed, then RWMutex is an efficient choice because it lets multiple reader goroutines acquire locks simultaneously. This reduces the waiting time for reader goroutines significantly and expedites the overall execution of the program.
@@ -290,6 +296,8 @@ func readerFunction(wg *sync.WaitGroup, m *sync.Mutex) {
 Total execution time:  3.003424166s
 ```
 
+[Run this code in Go Playground](https://goplay.tools/snippet/N_SeF4wJtk2)
+
 The above program uses Mutex for synchronisation and it takes `3.003424166s` to execute. Let's try the same program with RWMutex.
 
 ```go
@@ -335,6 +343,8 @@ func readerFunction(wg *sync.WaitGroup, m *sync.RWMutex) {
 ➜  go go run main.go
 Total execution time:  1.0011145s
 ```
+
+[Run this code in Go Playground](https://goplay.tools/snippet/jIVoKdkdoyD)
 
 The above program uses RWMutex for synchronisation and it takes `1.0011145s` to execute.
 
