@@ -1,4 +1,13 @@
-# Variables, Data Types And Constants in Go
+---
+title: "Variables, Data Types And Constants in Go"
+seoTitle: "Variables in Go"
+datePublished: Tue Apr 05 2022 18:59:07 GMT+0000 (Coordinated Universal Time)
+cuid: cled6mmve000309mm3qme5bxq
+slug: variables-data-types-and-constants-in-go
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/f77Bh3inUpE/upload/57c453fc0e2bca4df20ed53f396e3a99.jpeg
+tags: programming-blogs, go, programming-languages, variable-declaration, variables-in-go
+
+---
 
 ## Variable
 
@@ -18,7 +27,7 @@ error       int64       uint64
 
 ## Zero value
 
-In some programming languages variable holds a `null` or `undefined` value when not initialized, Go gives it a zero value of its data type. A `boolean` variable if not initialized, get the `false` value and an `integer` variable gets `0` value, `string` variable will get `nil` value.
+In some programming languages variable holds a `null` or `undefined` value when not initialized, Go gives it a zero value of its data type. A `boolean` variable if not initialized, get the `false` value and an `integer` variable gets `0` value, `string` variable will get `""` (empty) value.
 
 ## Declaring a variable
 
