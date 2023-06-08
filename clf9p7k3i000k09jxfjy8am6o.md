@@ -406,3 +406,5 @@ In addition to using channels, Go also allows for the more traditional approach 
 `We will explore the sync package in greater detail in a separate blog post.`
 
 ***Thank you for reading this blog, and please give your feedback in the comment section below.***
+
+***Reference: "Concurrency in Go: Tools and Techniques for Developers" by Katherine Cox-Buday***
