@@ -24,44 +24,39 @@ In the introduction, we mentioned issues of RESTful APIs. Let’s try to underst
 
 Imagine you're at a library, and you want to gather information about different books. You go to the librarian and request details about a book's title, author, and publication date. The librarian gives you the title, but when you ask for the author's email or address or other books published by the same author, they tell you to go to a different librarian. To get all the information you need, you have to keep bouncing between different librarians. This is called ***under-fetching*** of data.
 
-In the world of software and applications, a similar situation occurs when fetching data from servers. 
+In the world of software and applications, a similar situation occurs when fetching data from servers.
 
 Let's consider a scenario where you're using a book catalogue API to fetch information about different books. If you want to retrieve the name of the author for a specific book, you would typically need to make multiple API calls to different endpoints.
 
 For instance, the initial endpoint might be ***/books/:$ID/author***, where ***$ID*** represents the unique identifier of the book. Underneath the surface, the API would first fetch all the book profiles from the Books entity. From that dataset, it would then extract the specific book using the provided ID and from that dataset, it’ll fetch the author ID. And finally using this ID server will make calls to ***/authors/:$ID*** endpoint which will make fetch all the details of that author from the Author entity.
 
-```bash
-Request 1: GET /books
-Response 1:
-{
-  "books": [
-    {
-      "id": 1,
-      "title": "The Ink Black Heart",
-      "genre": "Mystery",
-      "publicationDate": "30 August 2022",
-      "isbn": "9780316413138"
-    },
-    ...
-  ]
-}
+For instance, the if want to fetch the author-related details from the database then we might first hit on /***books/:$id****.* Here, in the backend we might need to make two queries, the first query will fetch the book with a particular id or just the author id from the book table and then we'll have to make a second query to the author table with the author id and fetch the record, assuming author-related information is stored in a separate table.
 
-Request 2: GET /authors
+```bash
+Request 1: GET /books/1
+Response 1:
+"book":
+   {
+     "id": 1,
+     "title": "The Ink Black Heart",
+     "genre": "Mystery",
+     "publicationDate": "30 August 2022",
+     "isbn": "9780316413138"
+     "author_id": "123"
+   }
+
+Request 2: GET /authors/123
 Response 2:
-{
-  "authors": [
-    {
-      "id": 1,
+"author":
+  {
+      "id": 123,
       "name": "J. K. Rowling"
-    },
-    ...
-  ]
-}
+  }
 ```
 
 As you can see, the server has to make multiple calls to different endpoints to fulfil this request, resulting in what we call ***under-fetching*** of data. It means that the API fails to retrieve all the required data in a single call, leading to additional requests and unnecessary processing.
 
-On the other hand, there's the issue of ***over-fetching*** data. 
+On the other hand, there's the issue of ***over-fetching*** data.
 
 Imagine you're at a magical restaurant where you can order any food or drink you desire. You walk up to the bartender and say, "I'd like a drink, please." The bartender nods, disappears for a moment, and returns with a tray filled with every drink imaginable: water, soda, juice, cocktails, and even a bowl of soup! You only wanted a simple glass of lemonade, but now you're overwhelmed with choices. This is called ***over-fetching*** of data.
 
@@ -464,7 +459,7 @@ books, err := client.Book.Query().All(ctx)
 
 This code retrieves all the Book records stored in the database.
 
-Ent provides many more useful functions and options for creating, fetching, and manipulating data in the database. Such features make database operations more manageable and efficient. I encourage you to explore the [Ent documentation](https://entgo.io/docs/getting-started) for a deeper understanding of Ent's capabilities and how to make the most of it in your projects. 
+Ent provides many more useful functions and options for creating, fetching, and manipulating data in the database. Such features make database operations more manageable and efficient. I encourage you to explore the [Ent documentation](https://entgo.io/docs/getting-started) for a deeper understanding of Ent's capabilities and how to make the most of it in your projects.
 
 **Test ent setup**
 
@@ -636,7 +631,7 @@ Once you have installed and configured **entgql**, you can execute the code gene
 go generate .
 ```
 
-***Note***: If you encounter package inconsistencies or missing package errors in your IDE after running ***go generate***, you can resolve them by running ***go mod tidy***. 
+***Note***: If you encounter package inconsistencies or missing package errors in your IDE after running ***go generate***, you can resolve them by running ***go mod tidy***.
 
 You'll notice a new file was created named **ent.graphql**:
 
@@ -822,7 +817,7 @@ The NewSchema function is responsible for creating the GraphQL executable schema
 
 By adding this code to resolver.go, we ensure that our GraphQL server has access to the ent.Client and can utilize it for database operations.
 
-To create the entry point for our GraphQL server, we'll start by creating a new directory called **server**. Inside this directory, we'll create a **main.go** file, which will serve as the entry point for our GraphQL server. 
+To create the entry point for our GraphQL server, we'll start by creating a new directory called **server**. Inside this directory, we'll create a **main.go** file, which will serve as the entry point for our GraphQL server.
 
 ```bash
 mkdir server
