@@ -28,9 +28,7 @@ In the world of software and applications, a similar situation occurs when fetch
 
 Let's consider a scenario where you're using a book catalogue API to fetch information about different books. If you want to retrieve the name of the author for a specific book, you would typically need to make multiple API calls to different endpoints.
 
-For instance, the initial endpoint might be ***/books/:$ID/author***, where ***$ID*** represents the unique identifier of the book. Underneath the surface, the API would first fetch all the book profiles from the Books entity. From that dataset, it would then extract the specific book using the provided ID and from that dataset, it’ll fetch the author ID. And finally using this ID server will make calls to ***/authors/:$ID*** endpoint which will make fetch all the details of that author from the Author entity.
-
-For instance, the if want to fetch the author-related details from the database then we might first hit on /***books/:$id****.* Here, in the backend we might need to make two queries, the first query will fetch the book with a particular id or just the author id from the book table and then we'll have to make a second query to the author table with the author id and fetch the record, assuming author-related information is stored in a separate table.
+For instance, the if want to fetch the author-related details from the database then we might first hit on /***books/:$id***. Here, in the backend we might need to make two queries, the first query will fetch the book with a particular id or just the author id from the book table and then we'll have to make a second query to the author table with the author id and fetch the record, assuming author-related information is stored in a separate table.
 
 ```bash
 Request 1: GET /books/1
