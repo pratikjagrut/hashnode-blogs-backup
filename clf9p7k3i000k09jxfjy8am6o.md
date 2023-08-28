@@ -135,18 +135,18 @@ var chanName chan interface{}
 chaneName := make(chan interface{})
 ```
 
-The above example of creating a bidirectional channel, i.e we can write to or read from the channel but Go also allows us to create a unidirectional channel.
+The above example of creating a bidirectional channel, i.e. we can write to or read from the channel but Go also allows us to create a unidirectional channel.
 
 To create a unidirectional channel we need to use the `<-` operator. The position of the `<-` operator decides if the channel is a read channel or a write channel.
 
-Here's an example of a channel that can only read or receive.
+Here's an example of a read-only channel that can receive values of the `interface{}` type.
 
 ```go
 var chanName <-chan interface{}
 chaneName := make(<-chan interface{})
 ```
 
-Here's an example of a channel that can send or write data.
+Here's an example of a write-only channel that can send values of the `interface{}` type.
 
 ```go
 var chanName chan<- interface{}
