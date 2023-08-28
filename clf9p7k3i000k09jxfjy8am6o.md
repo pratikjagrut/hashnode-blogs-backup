@@ -12,17 +12,17 @@ tags: programming-blogs, go, concurrency, goroutines, concurrency-in-go
 
 Concurrency, asynchronous, parallel and threaded are some keywords we see floating around when we talk about running multiple processes using multiple resources. Although these terms may appear interchangeable in English, they have distinct differences in computer language, particularly at the compiler level and during runtime execution, as well as in their underlying philosophies.
 
-In the software development world, concurrency and parallelism are considered the same and used interchangeably while discussing them. Concurrency and parallelism aren't the same things. They may have some overlapping similarities but still, they're different. ***Concurrency is dealing with a lot of things at once and parallelism is doing a lot of things at once***.
+In the software development world, in theory, concurrency and parallelism are considered the same and used interchangeably though they aren't the same. They may have some overlapping similarities but still, they're different. ***Concurrency is dealing with a lot of things at once and parallelism is doing a lot of things at once***.
 
 Concurrency is at the code level, it is a way of structuring the code so that it may use parallelism to run but not necessarily. We can not write parallel code we can only write concurrent code hoping it will run parallel.
 
-For example, if you write a chat application then it needs to be able to handle each message from each user independently without affecting other users. So you structure your program in such a way that employs concurrency. Now suppose you've got a single-core CPU, in this case, the second message will have to wait until the first message is processed but if you've 2 core CPUs then both messages will be processed parallelly.
+For example, if you write a chat application then it needs to be able to handle each message from each user independently without affecting other users. So you structure your program in such a way that employs concurrency. Now suppose you've got a single-core CPU, in this case, the second message will have to wait until the first message is processed but if you have core CPUs then both messages will be processed parallelly.
 
 ### Go's philosophy of concurrency
 
-It is very important to understand the thought behind Go's pattern of achieving concurrency before we began to write concurrent code.
+It is very important to understand the thought behind Go's pattern of achieving concurrency before we begin to write concurrent code.
 
-Go is a concurrent language. Concurrency primitives are built in Go's core, so it implicitly supports concurrency. Go was designed around CSP. CSP stands for ***Communicating Sequential Processes***. It was introduced by ***Charles Antony Richard Hoare*** in 1978 in a paper published by the same name at Association for Computing Machinery(ACM).
+Go is a concurrent language. Concurrency primitives are built in Go's core, so it implicitly supports concurrency. Go was designed around CSP. CSP stands for ***Communicating Sequential Processes***. It was introduced by ***Charles Antony Richard Hoare*** in 1978 in a paper published by the same name at the Association for Computing Machinery(ACM).
 
 ### Communicating Sequential Processes
 
