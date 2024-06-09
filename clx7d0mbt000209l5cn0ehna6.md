@@ -344,4 +344,4 @@ Hello, Kubernetes!%
 
 In conclusion, this beginner's guide has walked you through deploying your first application on Kubernetes. But remember, this is just the start. Kubernetes offers vast opportunities for optimizing your application's performance, scalability, and resilience. With features like advanced networking, load balancing, automated scaling, and self-healing, Kubernetes ensures seamless application operation in any environment. So, while this guide ends here, your journey with Kubernetes is only beginning.
 
-Thank you for reading this blog hope it helps you!!!
+Thank you for reading! Hope you find this helpful!
