@@ -1,7 +1,7 @@
 ---
 title: "Brief history of container orchestration"
 seoTitle: "Evolution of Containerization: From Chroot to Container Orchestrators"
-seoDescription: "Explore the evolution of containerization from chroot to Container. Discover key milestones, challenges, and the role of container orchestration in modern "
+seoDescription: "Explore the evolution of containerization from chroot to Container. Discover key milestones, challenges, and the role of container orchestration in modern"
 datePublished: Sat Jun 15 2024 10:48:59 GMT+0000 (Coordinated Universal Time)
 cuid: clxfzw2yd000208l9fi6a4jz4
 slug: brief-history-of-container-orchestration
@@ -139,4 +139,4 @@ Popular Container Orchestrators are:
 
 In conclusion, containerization has revolutionized software development and deployment, offering scalability, efficiency, and agility crucial in today's dynamic landscape. As we've explored the evolution from chroot to Docker and the challenges of managing containerized environments, it's clear that container orchestration is pivotal.
 
-In the next blog, we'll explore Kubernetes, covering its features, architecture and core components.
+***In the next blog, we'll explore Kubernetes, covering its features, architecture and core components****.*
