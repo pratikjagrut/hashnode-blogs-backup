@@ -4,7 +4,7 @@ seoTitle: "Introduction to Container Orchestration"
 seoDescription: "Explore the evolution of containerization from chroot to Container. Discover key milestones, challenges, and the role of container orchestration in modern"
 datePublished: Sat Jun 15 2024 10:48:59 GMT+0000 (Coordinated Universal Time)
 cuid: clxfzw2yd000208l9fi6a4jz4
-slug: brief-history-of-container-orchestration
+slug: introduction-to-container-orchestration
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1718435827233/cfacd6d8-7827-4139-af24-5c00223f6135.png
 tags: microservices, docker, kubernetes, containers, containerization, k8s, container-orchestration
 
