@@ -5,7 +5,7 @@ seoDescription: "Discover the essentials of Kubernetes, the leading open-source 
 datePublished: Wed Jun 19 2024 17:08:45 GMT+0000 (Coordinated Universal Time)
 cuid: clxm37vxj000309k1bvo6awd4
 slug: introduction-to-kubernetes
-cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/9cXMJHaViTM/upload/fa86bb652ae693d05154d9b24af089c5.jpeg
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1718824969406/3817189f-91b4-4ada-b6e2-9edf4c4cac31.png
 tags: kubernetes, devops, containers, k8s, container-orchestration
 
 ---
