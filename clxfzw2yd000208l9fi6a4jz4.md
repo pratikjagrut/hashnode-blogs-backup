@@ -24,7 +24,7 @@ The culmination of these advancements led to the creation of `Linux Containers (
 
 Around the same time, the technological landscape experienced a major shift in software architecture. It moved from monolithic applications, where all modules run on a single machine and are tightly coupled, to a more decentralized and scalable model known as microservices architecture. In the 2000s, the rise of microservices architecture and the adoption of cloud computing rapidly accelerated the use of containerization. However, efficiently managing and orchestrating these containers remains a significant challenge.
 
-**Challenges in Container Management**
+### **Challenges in Container Management**
 
 Efficiently managing and orchestrating these containers at scale remains a formidable task, presenting challenges such as:
 
@@ -135,7 +135,7 @@ Popular Container Orchestrators are:
     * Features: Fully managed, integrated with Alibaba Cloud services, auto-scaling, security, and compliance.
         
 
-**Conclusion and Future Articles**
+### **Conclusion and Future Articles**
 
 In conclusion, containerization has revolutionized software development and deployment, offering scalability, efficiency, and agility crucial in today's dynamic landscape. As we've explored the evolution from chroot to Docker and the challenges of managing containerized environments, it's clear that container orchestration is pivotal.
 
