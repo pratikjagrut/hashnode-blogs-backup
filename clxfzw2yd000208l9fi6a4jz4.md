@@ -139,4 +139,4 @@ Popular Container Orchestrators are:
 
 In conclusion, containerization has revolutionized software development and deployment, offering scalability, efficiency, and agility crucial in today's dynamic landscape. As we've explored the evolution from chroot to Docker and the challenges of managing containerized environments, it's clear that container orchestration is pivotal.
 
-***In the next blog, we'll explore Kubernetes, covering its features, architecture and core components***. ***Thank you for taking the time to read this blog. I hope this helps you in your Kubernetes journey.***
+***Thank you for taking the time to read this blog. Your interest and engagement are greatly appreciated. In the next blog, we'll explore Kubernetes, covering its features, architecture and core components.***
