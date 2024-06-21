@@ -123,4 +123,4 @@ On the assigned node, the kubelet receives the pod definition from the API serve
 
 Kubernetes is a robust platform for managing containerized applications, offering features that simplify deployment, scaling, and maintenance. This article covered its origins, core functionalities, and architecture. Leveraging Kubernetes enhances efficiency, resilience, and flexibility, making it essential for modern cloud-native environments.
 
-***Thank you for taking the time to read this blog. Your interest and engagement are greatly appreciated. I hope this helps you on your Kubernetes journey. In the next article, we'll explore how to install Kubernetes using the Kubeadm tool.***
+***Thank you for reading this blog; your interest is greatly appreciated, and I hope it helps you on your Kubernetes journey; in the next article, we'll explore how to install Kubernetes using the Kubeadm tool.***
