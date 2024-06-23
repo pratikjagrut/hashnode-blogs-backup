@@ -5,7 +5,7 @@ seoDescription: "Learn how to create a Kubernetes cluster using Kubeadm with thi
 datePublished: Sat Jun 22 2024 07:54:02 GMT+0000 (Coordinated Universal Time)
 cuid: clxptq2nz000q08mf59wegdae
 slug: creating-a-kubernetes-cluster-with-kubeadm-and-containerd-a-comprehensive-step-by-step-guide
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1719153047091/1080c816-72e4-4b08-a49f-e430c226c222.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1719153747285/23d49598-be16-4275-8a53-19052cd1bce8.png
 tags: tutorial, kubernetes, containers, k8s, ckad, cka, cluster, kubeadm, step-by-step-guide
 
 ---
