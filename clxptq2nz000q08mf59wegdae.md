@@ -1,11 +1,11 @@
 ---
-title: "Creating a Kubernetes Cluster with Kubeadm: A Comprehensive Step-by-Step Guide"
+title: "Creating a Kubernetes Cluster with Kubeadm and Containerd: A Comprehensive Step-by-Step Guide"
 seoTitle: "Step-by-Step Guide to Creating a Kubernetes Cluster with Kubeadm"
 seoDescription: "Learn how to create a Kubernetes cluster using Kubeadm with this comprehensive step-by-step guide. From prerequisites to setting up container runtime and in"
 datePublished: Sat Jun 22 2024 07:54:02 GMT+0000 (Coordinated Universal Time)
 cuid: clxptq2nz000q08mf59wegdae
-slug: creating-a-kubernetes-cluster-with-kubeadm-a-comprehensive-step-by-step-guide
-cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/ZfVyuV8l7WU/upload/ad6cd8818297c25ad4f10da4ed7f8392.jpeg
+slug: creating-a-kubernetes-cluster-with-kubeadm-and-containerd-a-comprehensive-step-by-step-guide
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1719153047091/1080c816-72e4-4b08-a49f-e430c226c222.png
 tags: tutorial, kubernetes, containers, k8s, ckad, cka, cluster, kubeadm, step-by-step-guide
 
 ---
