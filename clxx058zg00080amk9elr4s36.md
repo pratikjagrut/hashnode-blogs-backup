@@ -229,4 +229,4 @@ Pods are the core units in Kubernetes, encapsulating containers with shared stor
 
 `Pods in Kubernetes are inherently ephemeral and can be terminated at any time. Kubernetes uses controllers to effectively manage Pods, ensuring their desired state is maintained. ReplicationSet controllers ensure a specified number of Pod replicas are running. Other controllers like Deployments, StatefulSets, and DaemonSets cater to different use cases.`
 
-***Thank you for reading this blog; your interest is greatly appreciated, and I hope it helps you on your Kubernetes journey. In the next blog, we'll delve into Kubernetes controllers used to manage Pods.***
+***Thank you for reading this blog; your interest is greatly appreciated, and I hope it helps you on your Kubernetes journey. In the next blog, we'll explore Kubernetes controllers that are used to manage Pods.***
