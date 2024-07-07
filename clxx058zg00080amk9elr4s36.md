@@ -148,7 +148,9 @@ When writing any object in Kubernetes, you need to include certain required fiel
 
 This field specifies the version of the Kubernetes API that your object adheres to, ensuring compatibility with your Kubernetes cluster (e.g., `v1`).
 
-`kind`: This field defines the type of Kubernetes object being created. In our YAML file, it indicates that we are creating a Pod.
+### kind
+
+This field defines the type of Kubernetes object being created. In our YAML file, it indicates that we are creating a Pod.
 
 ### metadata
 
