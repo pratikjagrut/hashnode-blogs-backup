@@ -1,10 +1,10 @@
 ---
-title: "ReplicaSet"
+title: "Kubernetes: ReplicaSet"
 seoTitle: "Scaling and Managing Workloads with Kubernetes ReplicaSets"
 seoDescription: "Learn how Kubernetes ReplicaSets ensure high availability, fault tolerance, and scalability for your applications by maintaining a specified number of pod r"
 datePublished: Sun Jul 07 2024 11:32:53 GMT+0000 (Coordinated Universal Time)
 cuid: clybh5aiz000008lg2uzhd04j
-slug: replicaset
+slug: kubernetes-replicaset
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720351639976/6c28b9c0-49cb-4e4d-81b4-303f6342c8da.png
 tags: kubernetes, ckad, cka, replicaset
 
