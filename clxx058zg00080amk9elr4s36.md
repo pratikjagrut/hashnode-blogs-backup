@@ -140,7 +140,7 @@ NAME        READY   STATUS    RESTARTS      AGE
 nginx-pod   1/1     Running   0             5s
 ```
 
-## Let's break down the definition of a Pod in Kubernetes.
+## Let's break down the Pod manifest
 
 When writing any object in Kubernetes, you need to include certain required fields: `apiVersion`, `kind`, `metadata`, and `spec`.
 
