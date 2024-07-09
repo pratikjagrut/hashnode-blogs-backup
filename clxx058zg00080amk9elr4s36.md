@@ -10,6 +10,8 @@ tags: tutorial, kubernetes, devops, containers, ckad, cka, pods
 
 ---
 
+## Introduction
+
 With Kubernetes, our main goal is to run our application in a container. However, Kubernetes does not run the container directly on the cluster. Instead, it creates a Pod that encapsulates the container.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1719319106324/a556ddf2-677f-4698-8714-910c500bfbc8.png align="center")
