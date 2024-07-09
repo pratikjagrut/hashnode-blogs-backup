@@ -10,6 +10,8 @@ tags: tutorial, kubernetes, containers, k8s, ckad, cka, cluster, kubeadm, step-b
 
 ---
 
+## Introduction
+
 Kubeadm is a tool designed to simplify the process of creating Kubernetes clusters by providing `kubeadm init` and `kubeadm join` commands as best-practice "fast paths." - Kubernetes documentation
 
 In this blog, we'll go through the step-by-step process of installing a Kubernetes cluster using Kubeadm.
