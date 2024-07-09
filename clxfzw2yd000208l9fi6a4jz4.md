@@ -10,6 +10,8 @@ tags: microservices, docker, kubernetes, containers, containerization, k8s, cont
 
 ---
 
+## Introduction
+
 Containerization has revolutionized how we develop and deploy software, streamlining processes and enhancing scalability. It all began modestly in `1979` with the introduction of `chroot`, a Unix feature that allowed applications to operate within a confined directory subset. This breakthrough laid the groundwork for application isolation, a crucial concept for modern containerization.
 
 Building upon chroot, FreeBSD's introduction of `jails` in 2000 marked a significant advancement. Jails provided a more robust form of isolation within a FreeBSD environment, enabling multiple applications to run securely on the same host without interference. This development was pivotal in demonstrating the practicality of isolating software environments for enhanced security and efficiency.
