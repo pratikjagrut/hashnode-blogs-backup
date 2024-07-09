@@ -10,6 +10,8 @@ tags: kubernetes, ckad, cka, replicaset
 
 ---
 
+## Introduction
+
 In the last blog, we explored Pods and how they encapsulate containers to run workloads on Kubernetes. While Pods provide useful features for running workloads, they also have inherent issues due to their ephemeral nature—they can be terminated at any time. When this happens, the user application will no longer be available.
 
 To avoid such situations and ensure the user application is always available, Kubernetes uses `ReplicaSets (RS)`. A ReplicaSet creates multiple identical replicas of a pod and ensures a specific number of pods are running at all times—neither fewer nor more.
