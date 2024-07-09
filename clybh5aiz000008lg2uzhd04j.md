@@ -5,7 +5,7 @@ seoDescription: "Learn how Kubernetes ReplicaSets ensure high availability, faul
 datePublished: Sun Jul 07 2024 11:32:53 GMT+0000 (Coordinated Universal Time)
 cuid: clybh5aiz000008lg2uzhd04j
 slug: kubernetes-replicaset
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720351639976/6c28b9c0-49cb-4e4d-81b4-303f6342c8da.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720500826898/210785bd-9840-43f7-8b2c-6114919e1e4e.png
 tags: kubernetes, ckad, cka, replicaset
 
 ---
@@ -15,6 +15,8 @@ tags: kubernetes, ckad, cka, replicaset
 In the last blog, we explored Pods and how they encapsulate containers to run workloads on Kubernetes. While Pods provide useful features for running workloads, they also have inherent issues due to their ephemeral nature—they can be terminated at any time. When this happens, the user application will no longer be available.
 
 To avoid such situations and ensure the user application is always available, Kubernetes uses `ReplicaSets (RS)`. A ReplicaSet creates multiple identical replicas of a pod and ensures a specific number of pods are running at all times—neither fewer nor more.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720501042183/2c464dcc-2159-4f8f-bf5f-5d74b6192978.png align="center")
 
 A `ReplicaSet controller` continuously monitors the pods to ensure that the number of desired pods equals the number of available pods at all times. If a pod fails, the ReplicaSet automatically creates more pods. Conversely, if new pods with the same label are added and there are more pods than needed, the ReplicaSet will reduce the number by stopping the extra pods.
 
