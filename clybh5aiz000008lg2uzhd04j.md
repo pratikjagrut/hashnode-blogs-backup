@@ -251,7 +251,7 @@ Deleting the ReplicaSet will terminate all the pods it manages. If you want to k
 kubectl delete rs nginx-replicaset --cascade=orphan
 ```
 
-## Scenarios Where RSs are Particularly Useful
+## Scenarios where RS are useful
 
 1. **High Availability:** ReplicaSets ensure that a specified number of pod replicas are always running, which is crucial for applications requiring high availability.
     
