@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes: Deployments (Part-1)"
 seoTitle: "Kubernetes Deployments Explained: Configuration, Management, and Scali"
-seoDescription: "Discover the essentials of Kubernetes Deployments in this comprehensive guide. Learn how to configure, create, manage, and scale Deployments to ensure high "
+seoDescription: "Discover the essentials of Kubernetes Deployments in this comprehensive guide. Learn how to configure, create, manage, and scale Deployments to ensure high"
 datePublished: Mon Jul 15 2024 15:14:04 GMT+0000 (Coordinated Universal Time)
 cuid: clyn4kjn6000008kzc5rr3o7b
 slug: kubernetes-deployments-part-1
@@ -146,7 +146,7 @@ When writing any object in Kubernetes, you need to include certain required fiel
         * **rollingUpdate:** Specifies parameters for the rolling update strategy, such as `maxUnavailable` and `maxSurge`.
             
 
-### Creating a Deployment
+## Creating a Deployment
 
 To create a Deployment using the above YAML configuration, save the configuration to a file named `nginx-deployment.yaml` and apply it to the Kubernetes cluster using the following command:
 
@@ -154,7 +154,7 @@ To create a Deployment using the above YAML configuration, save the configuratio
 kubectl apply -f nginx-deployment.yaml
 ```
 
-### Managing a Deployment
+## Managing a Deployment
 
 You can list the Deployments using the `kubectl get deployments` command:
 
