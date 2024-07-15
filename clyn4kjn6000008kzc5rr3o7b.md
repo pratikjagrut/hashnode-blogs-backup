@@ -263,7 +263,7 @@ Deleting the Deployment will terminate all the pods it manages. If you want to k
 kubectl delete deployment nginx-deployment --cascade=orphan
 ```
 
-### Conclusion
+## Conclusion
 
 In summary, Deployments play a crucial role in managing the desired state of your applications by ensuring a specified number of pod replicas are running at all times. This not only enhances the availability and reliability of your applications but also simplifies the management of pods in a Kubernetes environment.
 
